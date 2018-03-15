@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9387692A2059182700D227EB /* PodSpec */,
-				938769292059181F00D227EB /* Class */,
+				938769292059181F00D227EB /* Classes */,
 				938768FA205917B900D227EB /* CPFUIAdapterApp */,
 				9387690F205917B900D227EB /* CPFUIAdapterAppTests */,
 				9387691A205917B900D227EB /* CPFUIAdapterAppUITests */,
@@ -133,14 +133,14 @@
 			path = CPFUIAdapterAppUITests;
 			sourceTree = "<group>";
 		};
-		938769292059181F00D227EB /* Class */ = {
+		938769292059181F00D227EB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				936CF5CD205A193B000474A5 /* CPFUIAdapter.swift */,
 				936CF5CF205A2877000474A5 /* ValueTransfer.swift */,
 			);
-			name = Class;
-			path = ../Class;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 		9387692A2059182700D227EB /* PodSpec */ = {
