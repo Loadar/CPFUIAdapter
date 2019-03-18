@@ -50,14 +50,43 @@ public class CPFUIAdapter {
         return scale(with: .x)
     }
     
+    /// 水平方向缩放系数(不小于原始值)
+    public var xScaleUp: CGFloat {
+        return max(scale(with: .x), 1)
+    }
+    
+    /// 水平方向缩放系数(不大于原始值)
+    public var xScaleDown: CGFloat {
+        return min(scale(with: .x), 1)
+    }
+    
     /// 垂直方向缩放系数
     public var yScale: CGFloat {
         return scale(with: .y)
     }
     
+    /// 垂直方向缩放系数(不小于原始值)
+    public var yScaleUp: CGFloat {
+        return max(scale(with: .y), 1)
+    }
+    
+    /// 垂直方向缩放系数(不大于原始值)
+    public var yScaleDown: CGFloat {
+        return min(scale(with: .y), 1)
+    }
+    
     /// 平均缩放系数(字体、图片等)
     public var scale: CGFloat {
         return scale(with: .average)
+    }
+    
+    /// 平均缩放系数(字体、图片等)(不小于原始值)
+    public var scaleUp: CGFloat {
+        return max(scale(with: .average), 1)
+    }
+    /// 平均缩放系数(字体、图片等)(不大于原始值)
+    public var scaleDown: CGFloat {
+        return min(scale(with: .average), 1)
     }
     
     private func scale(with key: CPFUIAdapter.Key) -> CGFloat {
